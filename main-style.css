@@ -15,6 +15,46 @@ body {
   max-width: 100vw;
   min-height: 100vh;
   font-family: 'Electrolize', sans-serif;
-  background: #000;
+  background: #002B38;
   color: aliceblue;
+}
+
+/* #2 Variables */
+html {
+    --main-font-color: rgba(245, 245, 245, 0.6);
+    --main-palette-color: #002B38;
+    /*--main-palette-color: #f8ede3;*/
+    --secondary-palette-color: /*#F5F5F5*/ #f67e7d;
+    --btn-color: /*#6369D1*/ #f67e7d;
+  }
+
+/* #2 Containers */
+.large-container-flex {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+/* #3 Main Section */
+main {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+/* #3.1 Introductory Section */
+.introductory-card {
+    background-color: var(--main-palette-color);
+}
+
+.introductory-card-img {
+    background-image: url(./assets/wallpapers/introductory-bg.png);
 }
