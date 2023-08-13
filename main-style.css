@@ -93,7 +93,7 @@ header {
   .header-section__logo img {
     width: 5em;
     height: auto;
-    max-height: 100px;
+    max-height: 5em;
   }
   
   /* #2.2 Header Nav */
@@ -111,6 +111,12 @@ header {
   .header-section__nav a {
     color: var(--main-font-color);
     text-decoration: none;
+  }
+
+  .header-section__lang a img{
+    width: 3em;
+    height: auto;
+    max-height: 3em;
   }
 
 /* #5 Main Section */
