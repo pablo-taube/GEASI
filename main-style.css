@@ -114,9 +114,9 @@ header {
   }
 
   .header-section__lang a img{
-    width: 1.5em;
+    width: 1em;
     height: auto;
-    max-height: 1.5em;
+    max-height: 1em;
   }
 
 /* #5 Main Section */
