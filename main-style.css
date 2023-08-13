@@ -98,7 +98,7 @@ header {
   
   /* #2.2 Header Nav */
   .header-section__nav {
-    width: 30%;
+    width: 50%;
     height: 100%;
     max-width: 500px;
     display: flex;
