@@ -1,35 +1,51 @@
 /* #0 Resources Imports */
 
+
 /* #0.1 Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap') /*Electro Font*/;
-@import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Inter:wght@300;400;700;800&display=swap'); /*Inter font*/
+
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap')
+/*Electro Font*/
+
+;
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Inter:wght@300;400;700;800&display=swap');
+
+/*Inter font*/
+
 
 /* #1 General Style */
+
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  width: 100vw;
-  max-width: 100vw;
-  min-height: 100vh;
-  font-family: 'Inter', sans-serif;
-  background: #002B38;
-  color: aliceblue;
+    margin: 0 1rem 0 1rem;
+    width: 100vw;
+    max-width: 100vw !important;
+    min-height: 100vh;
+    font-family: 'Inter', sans-serif;
+    background: #002B38;
+    color: aliceblue;
 }
 
+
 /* #2 Variables */
+
 html {
     --main-font-color: rgba(245, 245, 245, 0.6);
     --main-palette-color: #002B38;
     /*--main-palette-color: #f8ede3;*/
-    --secondary-palette-color: /*#F5F5F5*/ #f67e7d;
-    --btn-color: /*#6369D1*/ #f67e7d;
-  }
+    --secondary-palette-color: /*#F5F5F5*/
+    #f67e7d;
+    --btn-color: /*#6369D1*/
+    #f67e7d;
+}
+
 
 /* #3 Containers */
+
 .large-container-flex {
     width: 100vw;
     height: 100vh;
@@ -50,7 +66,9 @@ html {
     justify-content: center;
 }
 
+
 /* #4 Header Section */
+
 header {
     background: var(--main-palette-color);
     color: var(--main-font-color);
@@ -64,9 +82,9 @@ header {
     min-height: 50px;
     max-height: 70px;
     font-size: 18px;
-  }
-  
-  .header-section {
+}
+
+.header-section {
     background: #dddddd;
     width: 85% !important;
     height: 10vh;
@@ -87,17 +105,22 @@ header {
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3);
-  }
-  
-  /* #2.1 Header Logo */
-  .header-section__logo img {
+}
+
+
+/* #2.1 Header Logo */
+
+.header-section__logo img {
+    background-color: #f67e7d;
     width: 5em;
     height: auto;
     max-height: 5em;
-  }
-  
-  /* #2.2 Header Nav */
-  .header-section__nav {
+}
+
+
+/* #2.2 Header Nav */
+
+.header-section__nav {
     width: 50%;
     height: 100%;
     max-width: 500px;
@@ -106,20 +129,22 @@ header {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
-  }
-  
-  .header-section__nav a {
+}
+
+.header-section__nav a {
     color: var(--main-font-color);
     text-decoration: none;
-  }
+}
 
-  .header-section__lang a img{
+.header-section__lang a img {
     width: 1em;
     height: auto;
     max-height: 1em;
-  }
+}
+
 
 /* #5 Main Section */
+
 main {
     width: 100vw;
     height: auto;
@@ -130,14 +155,83 @@ main {
     justify-content: center;
 }
 
+
 /* #3.1 Introductory Section */
+
 .introductory-section {
     background-color: var(--main-palette-color);
     font-family: 'Electrolize', sans-serif;
+    width: 100vw;
+    max-width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: left;
+    justify-content: center;
+}
+
+.introductory-card-title {
+    width: auto;
+    align-items: left;
+}
+
+.introductory-card-title h1 {
+    font-size: 03rem;
+    text-align: left;
+    padding-left: 4rem;
+}
+
+.introductory-card-title h2 {
+    font-size: 2rem;
+    text-align: left;
+    padding-left: 4rem;
 }
 
 .introductory-card-img {
-    background-image: url(./assets/wallpapers/introductory-bg.png);
+    object-position: right;
+    overflow: hidden;
+}
+
+.introductory-card-img img {
+    width: 90%;
+}
+
+
+/* #4 About Section */
+
+.about-section {
+    width: 100vw;
+    max-width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: left;
+    justify-content: center;
+}
+
+.about-section-img {
+    width: 50%;
+    max-width: 50vw;
+    height: 100vh;
+}
+
+.about-section-img img {
+    width: 97%;
+    max-width: 50vw;
+    height: 100vh;
+}
+
+.about-section-text {
+    width: 97%;
+    max-width: 50vw;
+    height: 100vh;
+    padding: 2em;
+}
+
+.about-section-text h3 {
+    font-size: 2rem;
 }
 
 footer {
